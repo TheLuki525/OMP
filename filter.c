@@ -40,7 +40,7 @@ int main()
 				for(int mi = 0; mi < 3; mi++)
 					for(int mj = 0; mj < 3; mj++)
 						tmp += mask[mi][mj]*data[(i+(mi-1))*y*3+(j+(mj-1)*3)+shift];
-				newdata[i*y*3+j+shift] = (char)(((float)tmp)/weight + 0.5);
+				newdata[i*y*3+j+shift] = (char)(((float)tmp)/weight + 0.5);//save color value
 			}
 	//save the result as "new2.ppm"
     f = fopen("new2.ppm", "wb");
