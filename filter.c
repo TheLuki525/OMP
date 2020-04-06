@@ -9,7 +9,7 @@ int main()
     if(!f)
         return 1;
     int x, y, max;
-    fscanf(f, "%*s %d %d %d", &x, &y, &max);
+    fscanf(f, "%*s %d %d %d", &x, &y, &max);//take image dimensions and max value
     fseek(f, 1, SEEK_CUR);
     printf("%d %d %d", x, y, max);
     unsigned char * data = (unsigned char *)malloc(x*y*3*sizeof(unsigned char));
